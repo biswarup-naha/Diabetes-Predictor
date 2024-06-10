@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Predictor</title>
+</head>
+<body>
+    <center class="form-container">
+        <h2>Diabetes Predictor</h2>
+        <form id="diabetes-form" method="post">
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="">select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div class="form-group">
+                <label for="hypertension">Hypertension:</label>
+                <input type="radio" name="ht" id="h-yes" value="yes">Yes
+                <input type="radio" name="ht" id="h-no" value="no">No
+            </div>
+            <div class="form-group">
+                <label for="heart-disease">Heart Disease:</label>
+                <input type="radio" name="hd" id="hd-yes" value="yes">Yes
+                <input type="radio" name="hd" id="hd-no" value="no">No
+            </div>
+            <div class="form-group">
+                <label for="smoking">Smoking History:</label>
+                <select name="smoking" id="smoking">
+                    <option value="">select</option>
+                    <option value="never">Never</option>
+                    <option value="ever">Ever</option>
+                    <option value="current">Current</option>
+                    <option value="not current">Not current</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="bmi">BMI:</label>
+                <input type="number" step="any" id="bmi">
+            </div>
+            <div class="form-group">
+                <label for="hbg4">Haemoglobin level:</label>
+                <input type="number" step="any" id="hbg4">
+            </div>
+            <div class="form-group">
+                <label for="glucose">Glucose level:</label>
+                <input type="number" step="any" id="glucose">
+            </div>
+            <input type="submit" value="Predict">
+        </form>
+        <div id="prediction-result"></div>
+    </center>
+
+    <script src="../static/script.js">
+    </script>
+</body>
+</html>
